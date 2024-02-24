@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-t4%8*#s%n-xc%4i43%d698hj+!4!^d=)_3^g@6!jhqkgsd1vcf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','10.0.2.2','192.168.29.204','Thushar.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','10.0.2.2','192.168.29.204','werewolf-pure-reindeer.ngrok-free.app']
 
 
 # Application definition
@@ -142,3 +142,5 @@ REST_FRAMEWORK = {
     ],
     # Your other DRF settings
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://werewolf-pure-reindeer.ngrok-free.app']

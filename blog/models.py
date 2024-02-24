@@ -8,7 +8,7 @@ class BlogPost(models.Model):
     author= models.ForeignKey(User, on_delete=models.CASCADE)
     slug=models.CharField(max_length=130)
     content=models.TextField()
-    image = models.ImageField(upload_to="profile_pics", blank=True, null=True)
+    image = models.ImageField(upload_to="profile_pics")
     dateTime=models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
